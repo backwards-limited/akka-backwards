@@ -13,6 +13,8 @@ Installation essentials:
 ```bash
 brew install scala
 brew install sbt
+brew install postgres
+brew install cassandra
 brew install kubernetes-cli
 brew install kubectl
 brew cask install virtualbox
