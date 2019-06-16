@@ -22,10 +22,10 @@ cqlsh>
 To connect to the running service **Postgres**:
 
 ```bash
-$ psql -h localhost -U docker
-Password for user docker: 
+$ psql -h localhost -U admin
+Password for user admin:
 psql (11.3)
 Type "help" for help.
 
-docker=#
+admin=#
 ```
