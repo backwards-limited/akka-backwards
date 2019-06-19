@@ -20,7 +20,7 @@ import scala.language.postfixOps
   * The best practice is to define your own shutdown message - below we have a Shutdown object.
   */
 object PersistentActors extends App {
-  val system = ActorSystem("PersistentActors")
+  val system = ActorSystem("persistent-actors")
   implicit val ec: ExecutionContextExecutor = system.dispatcher
   implicit val timeout: Timeout = Timeout(3 seconds)
 

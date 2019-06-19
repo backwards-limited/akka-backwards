@@ -8,60 +8,24 @@ Unit tests are under [test](../src/test):
 $ sbt test
 ```
 
-## Integration Test
-
-Unit tests are under [it](../src/it):
-
-```bash
-$ sbt dockerComposeUp
-
-$ sbt it:test
-
-$ sbt dockerComposeStop
-```
-
-or
-
-```bash
-$ sbt dockerComposeTest
-```
-
-
-
 ## Demo
 
 ```bash
-$ sbt dockerComposeUp
+$ sbt "; project persistence; run"
 
-$ sbt "it:runMain com.sky.ott.cassandra.evolutions.Demo"
+Multiple main classes detected, select one to run:
 
-$ sbt dockerComposeStop
+ [1] com.backwards.persistence.ex1.PersistentActors
+ [2] com.backwards.persistence.ex1.PersistentActorsExercise
+ ...
+
+Enter number:
 ```
 
-Or
+Or specify a specific "app" to run:
 
 ```bash
-$ docker-compose up
-
-$ sbt "it:runMain com.sky.ott.cassandra.evolutions.Demo"
-
-$ docker-compose down
-```
-
-Or
-
-Right-click [docker-compose.yml](src/it/resources/docker-compose.yml) and select **Run**.
-
-```bash
-$ sbt "it:runMain com.sky.ott.cassandra.evolutions.Demo"
+$ sbt "; project persistence; runMain com.backwards.persistence.ex1.PersistentActorsExercise"
 ```
 
 
-
-
-
-
-
-```bash
-$ sbt docker:publishLocal
-```
