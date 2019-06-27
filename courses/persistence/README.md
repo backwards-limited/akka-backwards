@@ -6,3 +6,5 @@
 - [Build / Run](docs/build-run.md)
 - [Event Sourcing](docs/event-sourcing.md)
 - [Snapshots](docs/snapshots.md)
+- [Recovery](docs/recovery.md)
+

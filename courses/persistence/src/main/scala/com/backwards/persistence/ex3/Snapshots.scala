@@ -10,10 +10,10 @@ object Snapshots extends App {
 
   val chat = system.actorOf(Chat.props("david123", "bob123"), "chat")
 
-  /*(1 to 50000) foreach { i =>
+  (1 to 50000) foreach { i =>
     chat ! ReceivedMessage(s"Akka Ye Baby $i")
     chat ! SentMessage(s"Oh Ye $i")
-  }*/
+  }
 
   chat ! "print"
 }
