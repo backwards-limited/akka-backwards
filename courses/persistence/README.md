@@ -7,4 +7,5 @@
 - [Event Sourcing](docs/event-sourcing.md)
 - [Snapshots](docs/snapshots.md)
 - [Recovery](docs/recovery.md)
+- [Persist Async](docs/persist-async.md)
 
